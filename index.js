@@ -24,6 +24,6 @@ mongoose
     console.log(err.message);
   });
 
-const server = app.listen(process.env.PORT, () => {
+const server = app.listen(process.env.PORT || 5000, () => {
   console.log(`Server Started on Port ${process.env.PORT}`);
 });
