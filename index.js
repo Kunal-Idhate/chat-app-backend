@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const { MongoClient, ServerApiVersion } = require("mongodb");
 const userRoutes = require("./routes/userRoutes");
 const messageRoutes = require("./routes/messagesRoute");
 const app = express();
